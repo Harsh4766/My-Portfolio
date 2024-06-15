@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="..." class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark icons" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars icons" onclick="openmenu()"></i>
+            </nav>
+            <div class="photo">
+                <img src="passport_pic.jpg" alt="...">
+            </div>
+            <div class="header-text">
+                <h1>Hi , I'm <span>Harsh Yadav</span></h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="profile.jpg" alt="...">
+                </div>
+                <div class="about-col2">
+                    <h1 class="title">About Me</h1>
+                    <p>Passionate and dedicated Web Developer with expertise in various programming languages and
+                        frameworks, and skilled in both frontend and backend development.Committed to writing clean,
+                        maintainable code and continuously learning new technologies while working collaboratively with
+                        cross- functional teams to achieve project goals.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML&emsp;CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>ReactJS</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>Django</span></li>
+                            <li><span>PHP&emsp;MySQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Oasis Infobyte</span></li>
+                            <li>May 2024 - Jun 2024</li>
+                            <li>Web Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Bachlor's in Information Technology</span><br>2022 - pursuing Percentage : 82.8
+                            </li>
+                            <li><span>Diploma in Information Technology</span><br>2019 - 2022 Percentegae : 90.1</li>
+                            <li><span>SSC</span><br>2018 - 2019 Percentage : 92</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Web design</h2>
+                    <p>Ensuring that websites are fully functional and visually appealing on all devices, including
+                        desktops, tablets, and smartphones. This includes using bootstrap, CSS media queries, flexible
+                        grid layouts, and responsive images to adapt the design to different screen sizes and
+                        orientations.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Creating the visual and interactive aspects of a website that users interact with directly. This
+                        involves building user interfaces using modern JavaScript frameworks and libraries, ensuring a
+                        seamless and intuitive user experience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Backend development</h2>
+                    <p>Creating the visual and interactive aspects of a website that users interact with directly. This
+                        involves building user interfaces using modern JavaScript frameworks and libraries, ensuring a
+                        seamless and intuitive user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="ecom.jpeg" alt="...">
+                    <div class="layer">
+                        <h3>Online Shopping Cart</h3>
+                        <p>Dynamic full-stack e-commerce project leveraging HTML,
+                            CSS, and javaScript for an immersive frontend experience.
+                            Backend powered by Python and Django.Integrated secure
+                            payment gateway functionality for seamless
+                            transactions.Implemented responsive design and ensuring
+                            a secure and efficient online shopping experience.
+                        </p>
+                        <a href="https://github.com/Harsh4766/E-Commerce-site "><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="weatherpic.png" alt="...">
+                    <div class="layer">
+                        <h3>WeatherApp</h3>
+                        <p>Developed a worldwide weather website using HTML, CSS, 
+                            and React, seamlessly integrating API to fetch real-time 
+                            temperature data for any city worldwide.Ensured accurate 
+                            and up-to-date weather information through efficient API.
+                            </p>
+                        <a href="https://github.com/Harsh4766/Weather-App "><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="blog.png" alt="...">
+                    <div class="layer">
+                        <h3>Blog Website</h3>
+                        <p>Created a blog website using PHP, HTML, and 
+                            Bootstrap.Enabled users to create, edit, and delete blog 
+                            posts with titles and  descriptions using MySQL.Added 
+                            functionality for users to comment on specific blog posts.
+                            </p>
+                        <a href="https://github.com/Harsh4766/Blog-site "><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yadavhd04@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8735004766</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Harsh4766"><i class="fa-brands fa-github"></i>Github Profile</a>
+                        <a href="https://www.linkedin.com/in/harsh-yadav148/"><i
+                                class="fa-brands fa-linkedin"></i>LinkedIn Profile</a>
+                    </div>
+                    <a href="Harsh_Yadav_Resume.pdf" class="btn btncv" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
+                        <input type="text" name="Email" id="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="5" id="Message" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" name="Submit" class="btn btncv">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Harsh. Made with <i class="fa-solid fa-heart"></i> by Harsh Yadav.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

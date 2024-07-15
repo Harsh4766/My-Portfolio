@@ -1,6 +1,5 @@
 var tablinks=document.getElementsByClassName('tab-links');
 var tabcontents=document.getElementsByClassName('tab-content');
-
 function opentab(tabname)
 {
     for(tablink of tablinks)
@@ -42,3 +41,20 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxzkTpnzyMhGIiuunaHPG
 
       alert("Your message sent successfully");
   })
+  var seebtn=document.getElementById('seemore');
+  var seemore=document.getElementsByClassName('see-more');
+  seebtn.addEventListener('click', () => {
+    setTimeout(()=>{
+    if (seebtn.innerHTML === "See More") {
+      for (var i = 0; i < seemore.length; i++) {
+        seemore[i].style.display = 'block';
+      }
+      seebtn.innerHTML = "See Less";
+    } else {
+      for (var i = 0; i < seemore.length; i++) {
+        seemore[i].style.display = 'none';
+      }
+      seebtn.innerHTML = "See More";
+    }
+  },500);
+  });

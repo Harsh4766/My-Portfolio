@@ -397,6 +397,10 @@ nav .icons{
     display: none;
 }
 
+.see-more{
+    display: none;
+}
+
 
 @media only screen and (max-width:600px) {
 
@@ -469,6 +473,10 @@ nav .icons{
 
     .copyright{
         font-size: 15px;
+    }
+
+    .layer{
+        font-size: 10px;
     }
     
 }

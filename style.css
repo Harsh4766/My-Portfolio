@@ -404,6 +404,10 @@ nav .icons{
 
 @media only screen and (max-width:600px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     #header{
         background: #080808;
     }

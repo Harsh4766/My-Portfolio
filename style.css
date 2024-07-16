@@ -479,13 +479,12 @@ nav .icons{
         font-size: 10px;
     }
     
-    .tab-links{
-        font-size: 5px;
+    .tab-titles p{
+        font-size: 10px;
     }
 
     #aboutme{
         font-size: 15px;
-        text-align: justify;
     }
 
 }

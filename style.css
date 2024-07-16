@@ -480,6 +480,10 @@ nav .icons{
     }
     
     .tab-links{
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 25px;
     }
 }

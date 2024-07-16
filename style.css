@@ -284,6 +284,10 @@ nav ul li a:hover::after{
     display:flex;
 }
 
+#aboutme{
+    text-align: justify;
+}
+
 .btn{
     display: block;
     font-size: 15px;
@@ -485,7 +489,6 @@ nav .icons{
 
     #aboutme{
         font-size: 18px;
-        text-align: justify;
     }
 
 }
